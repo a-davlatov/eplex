@@ -19,7 +19,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color:rgba(61, 61, 61, 1);
-    background: #E5E5E5;
+    background: #fff;
 }
 
 *,
@@ -61,14 +61,21 @@ h6 {
     left: 0;
     z-index: 999;
     width: 100%;
+}
+
+.header--main {
     color: rgba(255, 255, 255, 1);
+}
+
+.header--main .header__wrapper::after {
+    background: rgba(255, 255, 255, .3);
 }
 
 .header__wrapper {
     position: relative;
 }
 
-.header__wrapper::after {
+.header__wrapper::before {
     content: '';
     display: block;
     width: 100%;
@@ -77,7 +84,7 @@ h6 {
     top: 55.5%;
     left: 0;
     z-index: inherit;
-    background: rgba(255, 255, 255, .3);
+    background: rgba(61, 61, 61, .1);
 }
 
 .header__top {
@@ -103,6 +110,10 @@ h6 {
 
 .header__top-right {
     display: flex;
+}
+
+.header__bottom {
+    position: relative;
 }
 
 /* Contacts
@@ -365,7 +376,9 @@ h6 {
 
 .consultation,
 .materials,
-.consultation {
+.consultation,
+.case,
+.partners--cases {
     padding-top: 0;
 }
 
@@ -386,6 +399,11 @@ h6 {
 
 .section__title--center {
     text-align: center;
+}
+
+.section__title--case {
+    line-height: 59px;
+    margin-top: -12px;
 }
 
 .section__subtitle {
@@ -432,6 +450,10 @@ h6 {
 
 /* Solution
 ================*/
+
+.solution {
+    background: #E5E5E5;
+}
 
 .solution__nav {
     padding: 45px 0 27px;
@@ -790,4 +812,74 @@ h6 {
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
+}
+
+
+/* Case
+================*/
+
+.case:first-child {
+    padding-top: 195px;
+}
+
+.case__inner {
+    display: flex;
+}
+
+.case__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.case__item + .case__item {
+    margin-left: 30px;
+}
+
+.case__text {
+    padding-top: 15px;
+}
+
+.case__text p {
+    padding-top: 20px;
+    font-family: inherit;
+    font-size: 16px;
+    color: inherit;
+    line-height: 24px;
+}
+
+.case__author {
+    padding: 60px 0 60px 70px;
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+}
+
+.case__author-avatar {
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.case__author-name {
+    margin-bottom: 15px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.case__author-position {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.case__video {
+    position: relative;
+}
+
+.cases__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
