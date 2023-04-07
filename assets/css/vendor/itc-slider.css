@@ -36,6 +36,7 @@
 .itc-slider-1 .itc-slider__item {
   flex: 0 0 25%;
   max-width: 25%;
+  text-align: center;
 }
 
 /* кнопки влево и вправо */
