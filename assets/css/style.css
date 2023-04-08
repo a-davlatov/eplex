@@ -761,7 +761,7 @@ h6 {
 }
 
 .consultation__content {
-    padding: 45px 30px 55px 60px;
+    padding: 45px 30px 150px 60px;
     height: 100%;
     background: rgba(244, 244, 244, 1);
 }
@@ -1465,9 +1465,78 @@ h6 {
         max-width: 33.33333%;
     }
 
+    /* About */
+    .about__inner {
+        padding-right: 400px;
+    }
+
 }
 
 @media (max-width: 767px) {
+
+    /* Founders */
+    .founders {
+        position: static;
+        margin-top: 40px;
+    }
+
+    .founders__item+.founders__item {
+        margin-top: 20px;
+    }
+
+    /* About */
+    .section.about {
+        padding-top: 100px;
+    }
+    .about__inner {
+        padding-right: 0;
+    }
+
+    .about__item+.about__item {
+        margin-top: 30px;
+    }
+
+    /* Consultation */
+    .consultation--about {
+        margin-bottom: 0;
+    }
+
+    .consultation__content {
+        padding: 40px 20px;
+    }
+
+    .yt__icon {
+        width: 60px;
+        height: auto;
+    }
+
+    /* Case */
+
+    .case__video {
+        display: flex;
+        justify-content: center;
+    }
+    .case__video-wrapper {
+        margin-top: 20px;
+        position: static;
+        margin-right: 0;
+        transform: none;
+    }
+
+    .case__img {
+        max-height: unset;
+        min-width: unset;
+        max-width: 100%;
+    }
+
+    .case__hint {
+        display: none;
+    }
+
+    .case__arrow {
+        display: none;
+    }
+
     /* Solution */
     .solution__nav {
         display: none;

@@ -5,9 +5,11 @@ const burger = document.querySelector('.burger')
 
 burger.addEventListener('click', (evt) => {
     const logo = document.querySelector('#logo-main')
-    let changeLogoSrc = logo.src.indexOf('light')
+    if (logo) {
+        let changeLogoSrc = logo.src.indexOf('light')
+        changeLogoSrc != -1 ? logo.setAttribute('src', 'assets/images/logo-dark.png') : logo.setAttribute('src', 'assets/images/logo-light.png')
+    }
 
     evt.target.classList.toggle('clicked')
     headerWrapper.classList.toggle('show')
-    changeLogoSrc != -1 ? logo.setAttribute('src', 'assets/images/logo-dark.png') : logo.setAttribute('src', 'assets/images/logo-light.png')
 })
