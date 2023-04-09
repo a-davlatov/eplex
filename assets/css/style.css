@@ -961,6 +961,8 @@ h6 {
     margin-right: 20px;
     border-radius: 50%;
     overflow: hidden;
+    width: 70px;
+    height: 70px;
 }
 
 .case__author-name {
@@ -1470,6 +1472,37 @@ h6 {
         padding-right: 400px;
     }
 
+    /* Case */
+
+    .case:first-child {
+        padding-top: 120px;
+        padding-bottom: 0;
+    }
+
+    .case__inner {
+        flex-direction: column;
+    }
+
+    .case__item+.case__item {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .case__poster {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .case__item--video {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .case__item--content {
+        order: 1;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -1586,12 +1619,37 @@ h6 {
     .section {
         padding: 60px 0;
     }
+
+    .section__title {
+        line-height: 32px;
+    }
 }
 
 @media (max-width: 572px) {
 
+    /* Section */
     .section {
         padding: 30px 0;
+    }
+
+    /* Case */
+    .case__author {
+        padding: 20px;
+    }
+
+    .case__author-name {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .case__author-position {
+        font-size: 14px;
+    }
+
+    .case__author-avatar {
+        margin-right: 15px;
+        width: 50px;
+        height: 50px;
     }
 
     /* Itc-slider */

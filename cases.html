@@ -13,13 +13,22 @@
 
 <body>
 
+    <!-- Header -->
     <header class="header">
         <div class="header__wrapper">
             <div class="container">
+                <div class="header__inner-mobile">
+                    <a href="#" class="logo">
+                        <img src="assets/images/logo-dark.png" alt="logo">
+                    </a>
+                    <button class="burger" type="button" id="burger">
+                        <span class="burger__item">Menu</span>
+                    </button>
+                </div>
                 <div class="header__inner">
                     <div class="header__top">
                         <div class="header__top-left">
-                            <a href="#" class="logo">
+                            <a href="/" class="logo">
                                 <img src="assets/images/logo-dark.png" alt="logo">
                             </a>
                             <div class="header__text">Инструменты для контроля закупок <br>
@@ -120,14 +129,14 @@
                     </div>
                     <div class="case__item">
                         <div class="case__video">
-                            <img src="assets/images/consultation/img1.jpg" alt="poster">
+                            <img src="assets/images/consultation/img1.jpg" alt="poster" class="case__poster">
                             <a href="#" class="cases__link">
-                                <img src="assets/images/yt.png" alt="YouTube">
+                                <img src="assets/images/yt.png" alt="YouTube" class="yt__icon">
                             </a>
                         </div>
                         <div class="case__author">
                             <div class="case__author-avatar">
-                                <img src="assets/images/cases/1.jpg" width="70" height="70" alt="avatar">
+                                <img src="assets/images/cases/1.jpg" width="70" height="70" alt="avatar" class="img">
                             </div>
                             <div class="case__author-content">
                                 <div class="case__author-name">Константин Константинопольский</div>
@@ -142,16 +151,16 @@
         <section class="section case">
             <div class="container">
                 <div class="case__inner">
-                    <div class="case__item">
+                    <div class="case__item case__item--video">
                         <div class="case__video">
-                            <img src="assets/images/consultation/img1.jpg" alt="poster">
+                            <img src="assets/images/consultation/img1.jpg" alt="poster" class="case__poster">
                             <a href="#" class="cases__link">
-                                <img src="assets/images/yt.png" alt="YouTube">
+                                <img src="assets/images/yt.png" alt="YouTube" class="yt__icon">
                             </a>
                         </div>
                         <div class="case__author">
                             <div class="case__author-avatar">
-                                <img src="assets/images/cases/2.jpg" width="70" height="70" alt="avatar">
+                                <img src="assets/images/cases/2.jpg" width="70" height="70" alt="avatar" class="img">
                             </div>
                             <div class="case__author-content">
                                 <div class="case__author-name">Вячеслав Антонов</div>
@@ -159,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="case__item">
+                    <div class="case__item case__item--content">
                         <h2 class="section__title section__title--case">Установка системы Eplex для сети автомагазинов Гудок</h2>
                         <div class="case__text section__text">
                             <p>Равным образом реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Таким образом постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание новых предложений. Задача организации, в особенности же новая модель организационной деятельности влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
@@ -214,7 +223,7 @@
                 <a href="#" class="logo">
                     <img src="assets/images/logo-dark.png" alt="logo">
                 </a>
-                <div class="contacts">
+                <div class="contacts contacts--footer">
                     <a href="mailto:info@eplex.ru   " class="contacts__email contacts__email--footer">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="2.5" y="4.5" width="15" height="11" rx="1.5" stroke="#FF0000" />
