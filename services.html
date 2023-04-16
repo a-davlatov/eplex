@@ -13,9 +13,18 @@
 
 <body>
 
+    <!-- Header -->
     <header class="header">
         <div class="header__wrapper">
             <div class="container">
+                <div class="header__inner-mobile">
+                    <a href="#" class="logo">
+                        <img src="assets/images/logo-dark.png" alt="logo">
+                    </a>
+                    <button class="burger" type="button" id="burger">
+                        <span class="burger__item">Menu</span>
+                    </button>
+                </div>
                 <div class="header__inner">
                     <div class="header__top">
                         <div class="header__top-left">
@@ -198,7 +207,7 @@
         <section class="section service">
             <div class="container">
                 <div class="service__inner">
-                    <div class="service__item">
+                    <div class="service__item service__item--video">
                         <div class="case__video">
                             <img src="assets/images/consultation/img1.jpg" class="case__img" alt="poster">
                             <a href="#" class="cases__link">
@@ -207,7 +216,7 @@
                         </div>
                         <button class="btn btn--red btn--services" type="button">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
                     </div>
-                    <div class="service__item">
+                    <div class="service__item service__item--content">
                         <h2 class="section__title section__title--services">Для собственника бизнеса <br>
                             и руководителя</h2>
                         <div class="benefits__text benefits__text--services">
@@ -450,27 +459,27 @@
         <!-- Solutions -->
         <section class="section solutions solutions--grey">
             <div class="container">
-                <div class="solutions__inner">
+                <div class="solutions__inner solutions__inner--employees">
                     <div class="solutions__item solutions__item--employees">
                         <h2 class="section__title section__title--services section__title--hasline">Наши <br> сотрудники</h2>
                     </div>
                     <div class="solutions__item solutions__item--employees">
                         <div class="solutions__icon">
-                            <img src="assets/images/employees/image1.jpg" alt="Сотрудник">
+                            <img src="assets/images/employees/image1.jpg" alt="Сотрудник" class="img">
                         </div>
                         <div class="founders__name">Евгений</div>
                         <div class="founders__position">Руководитель отдела продаж</div>
                     </div>
                     <div class="solutions__item solutions__item--employees">
                         <div class="solutions__icon">
-                            <img src="assets/images/employees/image2.jpg" alt="Сотрудник">
+                            <img src="assets/images/employees/image2.jpg" alt="Сотрудник" class="img">
                         </div>
                         <div class="founders__name">Иван</div>
                         <div class="founders__position">Генеральный директор</div>
                     </div>
                     <div class="solutions__item solutions__item--employees">
                         <div class="solutions__icon">
-                            <img src="assets/images/employees/image3.jpg" alt="Сотрудник">
+                            <img src="assets/images/employees/image3.jpg" alt="Сотрудник" class="img">
                         </div>
                         <div class="founders__name">Станислав</div>
                         <div class="founders__position">Менеджер по работе с клиентами</div>
@@ -485,10 +494,10 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__top">
-                <a href="/" class="logo">
+                <a href="#" class="logo">
                     <img src="assets/images/logo-dark.png" alt="logo">
                 </a>
-                <div class="contacts">
+                <div class="contacts contacts--footer">
                     <a href="mailto:info@eplex.ru   " class="contacts__email contacts__email--footer">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="2.5" y="4.5" width="15" height="11" rx="1.5" stroke="#FF0000" />

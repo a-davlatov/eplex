@@ -1263,6 +1263,11 @@ h6 {
 
 @media (max-width: 991px) {
 
+    /* Intro */
+    .intro--services {
+        margin-top: 85px;
+    }
+
     /* Burger */
     .burger {
         display: block;
@@ -1408,6 +1413,14 @@ h6 {
         margin-bottom: 25px;
     }
 
+    .section__title--services {
+        line-height: 35px;
+    }
+    .section__title--hasline {
+        align-self: start;
+        text-align: left;
+    }
+
     /* Benefits */
     .benefits__inner {
         justify-content: space-between;
@@ -1503,9 +1516,53 @@ h6 {
         order: 1;
     }
 
+    /* Service */
+
+    .service__item+.service__item {
+        margin-left: 20px;
+    }
+
+    .service__item {
+        width: 50%;
+        overflow: hidden;
+    }
+
 }
 
 @media (max-width: 767px) {
+
+    .intro__inner--services {
+        left: 50%;
+    }
+
+    /* Service */
+    .service__inner {
+        flex-direction: column;
+    }
+
+    .service__item+.service__item {
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .service__item {
+        width: 100%;
+    }
+    
+
+    .service__item--video {
+        order: 2;
+        text-align: center;
+    }
+    .service__item--content {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn--services {
+        margin-top: 30px;
+    }
 
     /* Founders */
     .founders {
@@ -1575,6 +1632,20 @@ h6 {
         display: none;
     }
 
+    .solutions__item+.solutions__item {
+        margin-left: 15px;
+        padding: 20px;
+    }
+
+    .solutions__item--employees {
+        padding: 0 !important;
+    }
+
+    .solutions__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
     /* Itc-slider */
     .itc-slider-1 .itc-slider__item {
         flex: 0 0 50%;
@@ -1623,6 +1694,16 @@ h6 {
     .section__title {
         line-height: 32px;
     }
+
+    .section__title--services {
+        align-self: center;
+        text-align: center;
+    }
+
+    .section__title--hasline {
+        align-self: start;
+        text-align: left;
+    }
 }
 
 @media (max-width: 572px) {
@@ -1630,6 +1711,10 @@ h6 {
     /* Section */
     .section {
         padding: 30px 0;
+    }
+
+    .section__title--hasline::after {
+        top: 110%;
     }
 
     /* Case */
