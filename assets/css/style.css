@@ -1416,6 +1416,7 @@ h6 {
     .section__title--services {
         line-height: 35px;
     }
+
     .section__title--hasline {
         align-self: start;
         text-align: left;
@@ -1531,6 +1532,7 @@ h6 {
 
 @media (max-width: 767px) {
 
+    /* Intro */
     .intro__inner--services {
         left: 50%;
     }
@@ -1542,24 +1544,25 @@ h6 {
 
     .service__item+.service__item {
         margin-left: 0;
-        margin-bottom: 40px;
+        margin: 40px 0;
     }
 
     .service__item {
         width: 100%;
     }
-    
 
     .service__item--video {
         order: 2;
         text-align: center;
     }
+
     .service__item--content {
         order: 1;
         display: flex;
         flex-direction: column;
     }
 
+    /* Btn */
     .btn--services {
         margin-top: 30px;
     }
@@ -1578,6 +1581,7 @@ h6 {
     .section.about {
         padding-top: 100px;
     }
+
     .about__inner {
         padding-right: 0;
     }
@@ -1595,6 +1599,7 @@ h6 {
         padding: 40px 20px;
     }
 
+    /* Yt icon */
     .yt__icon {
         width: 60px;
         height: auto;
@@ -1606,6 +1611,7 @@ h6 {
         display: flex;
         justify-content: center;
     }
+
     .case__video-wrapper {
         margin-top: 20px;
         position: static;
@@ -1674,13 +1680,14 @@ h6 {
         flex-direction: column;
     }
 
-    .materials__item + .materials__item {
+    .materials__item+.materials__item {
         margin-top: 30px;
     }
 
     .materials__img {
         order: 1;
     }
+
     .materials__content {
         order: 2;
         padding-bottom: 45px;
@@ -1743,6 +1750,20 @@ h6 {
         max-width: 100%;
     }
 
+    /* Intro */
+
+    .intro--services {
+        margin-top: 70px;
+    }
+
+    .intro.intro--services img {
+        height: 590px;
+    }
+
+    .intro__inner--services {
+        align-items: center;
+    }
+
     .intro__title {
         font-size: 26px;
         line-height: 35px;
@@ -1771,6 +1792,10 @@ h6 {
         color: rgba(61, 61, 61, 1);
     }
 
+    .intro__text--services {
+        color: #fff;
+    }
+
     .intro img {
         height: 760px;
     }
@@ -1779,10 +1804,12 @@ h6 {
         font-size: 16px;
     }
 
+    /* Section */
     .section__title {
         font-size: 24px;
     }
 
+    /* Benefits */
     .benefits__inner {
         flex-direction: column;
     }
@@ -1792,14 +1819,15 @@ h6 {
         margin-top: 20px;
     }
 
-
     /* Consultation */
     .consultation__item:nth-child(1) {
         order: 2;
     }
+
     .consultation__item:nth-child(2) {
         order: 1;
     }
+
     .consultation__content {
         padding: 25px 15px;
     }
@@ -1852,18 +1880,49 @@ h6 {
         margin-left: 0;
         order: 3;
     }
+
     .footer__item:nth-child(4) {
         order: 1;
         margin-left: 0;
     }
+
     .footer__item:nth-child(2) {
         order: 2;
     }
 
-    .footer__item:nth-child(3), .footer__item:nth-child(1) {
+    .footer__item:nth-child(3),
+    .footer__item:nth-child(1) {
         margin-top: 15px;
     }
 
+    /* Solutions */
+    .solutions__inner {
+        flex-wrap: wrap;
+    }
+
+    .solutions__item {
+        width: 48%;
+    }
+
+    .solutions__item:nth-child(3) {
+        margin-left: 0;
+    }
+    .solutions__item:nth-child(3),
+    .solutions__item:nth-child(4) {
+        margin-top: 15px;
+    }
+
+    /* Founders */
+    .founders__name {
+        padding: 20px 0 8px;
+        font-size: 20px;
+    }
+
+    .founders__position {
+        font-size: 16px;
+    }
+
+    /* Solution */
     .solution__stats {
         width: 100%;
         top: -58px;
@@ -1882,7 +1941,8 @@ h6 {
     .solution__stats-item:nth-child(3) {
         margin-left: 0;
     }
-    .solution__stats-item:nth-child(3), 
+
+    .solution__stats-item:nth-child(3),
     .solution__stats-item:nth-child(4) {
         margin-top: 15px;
     }
@@ -1905,7 +1965,8 @@ h6 {
         line-height: 24px;
     }
 
-    .materials__item + .materials__item {
+    /* Materials */
+    .materials__item+.materials__item {
         margin-top: 15px;
     }
 
@@ -1919,5 +1980,35 @@ h6 {
 
     .materials__content {
         padding-left: 15px;
+    }
+}
+
+@media (max-width: 415px) {
+
+    /* Solutions */
+    .solutions__item {
+        width: 100%;
+    }
+
+    .solutions__item+.solutions__item {
+        margin-left: 0;
+    }
+
+    .solutions__item:nth-child(2) {
+        margin-top: 35px;
+    }
+
+    .solutions__text {
+        margin-top: 20px;
+    }
+
+    /* Section */
+    .section__title {
+        line-height: 24px;
+    }
+
+    /* Social */
+    .social__link+.social__link {
+        margin-left: 5px;
     }
 }
