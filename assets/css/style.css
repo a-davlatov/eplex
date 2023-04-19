@@ -1255,6 +1255,182 @@ h6 {
     align-items: center;
 }
 
+/* Slayden
+================*/
+.slayden-savnena {
+    height: 424px;
+    margin: 0 20px;
+    max-height: 748px;
+    max-width: 100%;
+    overflow: hidden;
+    width: 456px;
+}
+
+.slayden-savnena figure {
+    background-image: url('../images/benefits/macboook.png');
+    background-size: cover;
+    background-position: center center;
+    font-size: 0;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+#kobavenusab {
+    background-image: url('../images/benefits/chut.jpg');
+    background-size: cover;
+    bottom: 0;
+    border-right: 5px solid rgba(243, 240, 240, 0.7);
+    box-shadow: 10px 0 15px -13px #171717;
+    height: 100%;
+    max-width: 98.6%;
+    min-width: 0.6%;
+    overflow: visible;
+    position: absolute;
+    width: 50%;
+    animation: first 2s 1 normal ease-in-out 0.1s;
+    -webkit-animation: first 2s 1 normal ease-in-out 0.1s;
+}
+
+input#pedsumid {
+    border: none;
+    background: transparent;
+    cursor: col-resize;
+    height: 100vw;
+    left: 0;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    position: relative;
+    top: -100vw;
+    width: 100%;
+}
+
+input#pedsumid::-moz-range-track {
+    background: transparent;
+}
+
+input#pedsumid::-ms-track {
+    border: none;
+    background-color: transparent;
+    height: 100vw;
+    left: 0;
+    outline: none;
+    position: relative;
+    top: -100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: col-resize;
+    color: transparent;
+}
+
+input#pedsumid::-ms-fill-lower {
+    background-color: transparent;
+}
+
+input#pedsumid::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 100vw;
+    width: 0.5%;
+    opacity: 0;
+}
+
+input#pedsumid::-moz-range-thumb {
+    -moz-appearance: none;
+    height: 100vw;
+    width: 0.5%;
+    opacity: 0;
+}
+
+input#pedsumid::-ms-thumb {
+    height: 100vw;
+    width: 0.5%;
+    opacity: 0;
+}
+
+input#pedsumid::-ms-tooltip {
+    display: none;
+}
+
+#kobavenusab::before {
+    background: url(http://zornet.ru/ABVUN/Aba/detunis/comparision.png) no-repeat scroll 0 center transparent;
+    background-size: contain;
+    content: " ";
+    float: right;
+    height: 100%;
+    margin-right: -34px;
+    position: relative;
+    top: 0;
+    width: 64px;
+}
+
+@keyframes first {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 80%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes first {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 80%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+/* Tabs
+=============== */
+.tabs-nav.tabs__nav--benefits {
+    display: none;
+}
+
+.tabs-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs-nav__item {
+    border-bottom: 1px solid rgba(196, 196, 196, 1);
+    cursor: pointer;
+    flex: 1;
+    font-family: 'Oswald';
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    white-space: nowrap;
+    padding: 10px 20px;
+}
+
+.tabs-nav__item.is-active {
+    border-color: rgba(255, 0, 0, 1);
+    border-width: 3px;
+    color: rgba(255, 0, 0, 1);
+}
+
+.tab:not(.benefits__item) {
+    display: none;
+}
+
+.tab.is-active {
+    display: block;
+}
+
 @media (min-width: 1500px) {
     .intro__inner--services {
         left: 55%;
@@ -1263,9 +1439,19 @@ h6 {
 
 @media (max-width: 991px) {
 
-    /* Intro */
-    .intro--services {
-        margin-top: 85px;
+    /* Tabs */
+    .tab.is-active.benefits__item {
+        display: flex;
+    }
+
+    .tabs-nav.tabs__nav--benefits {
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    /* Slayden */
+    .slayden-savnena {
+        display: none;
     }
 
     /* Burger */
@@ -1359,6 +1545,9 @@ h6 {
     }
 
     /* Intro */
+    .intro--services {
+        margin-top: 85px;
+    }
 
     .intro__title {
         font-size: 40px;
@@ -1395,7 +1584,6 @@ h6 {
     }
 
     /* Section */
-
     .section {
         padding: 80px 0;
     }
@@ -1410,7 +1598,7 @@ h6 {
     }
 
     .section__title--benefits {
-        margin-bottom: 25px;
+        display: none;
     }
 
     .section__title--services {
@@ -1424,30 +1612,25 @@ h6 {
 
     /* Benefits */
     .benefits__inner {
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .benefits__item {
-        display: flex;
-        flex-direction: column;
+        display: none;
+        width: 100%;
         justify-content: center;
         align-items: center;
-    }
-
-    .benefits__item+.benefits__item {
-        margin-left: 20px;
     }
 
     .benefits__text {
         align-self: start;
     }
 
-    .benefits__img_desktop {
-        display: none;
-    }
-
     .benefits__img_mobile {
         display: block;
+        max-width: 400px;
+        width: 50%;
         margin-bottom: 20px;
     }
 
@@ -1815,8 +1998,19 @@ h6 {
     }
 
     .benefits__item+.benefits__item {
-        margin-left: 0;
         margin-top: 20px;
+    }
+    .benefits__item {
+        flex-direction: column;
+    }
+
+    .benefits__text {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .benefits__img_mobile {
+        width: 100%;
     }
 
     /* Consultation */
@@ -1907,6 +2101,7 @@ h6 {
     .solutions__item:nth-child(3) {
         margin-left: 0;
     }
+
     .solutions__item:nth-child(3),
     .solutions__item:nth-child(4) {
         margin-top: 15px;
