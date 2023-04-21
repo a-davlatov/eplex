@@ -571,11 +571,11 @@ h6 {
     transition: color .2s linear;
 }
 
-.solution__nav-link.active {
+.solution__nav-link.is-active {
     color: rgba(255, 0, 0, 1);
 }
 
-.solution__nav-link.active::after {
+.solution__nav-link.is-active::after {
     width: 100%;
 }
 
@@ -620,6 +620,9 @@ h6 {
     display: flex;
     justify-content: space-between;
 }
+.solution__inner.tab.is-active {
+    display: flex;
+}
 
 .solution__item {
     width: 45%;
@@ -632,6 +635,7 @@ h6 {
 
 .solution__item:last-child {
     width: 40%;
+    margin-top: 20px;
 }
 
 .solution__stats {
@@ -642,8 +646,18 @@ h6 {
     z-index: 2;
 }
 
+.solution__stats--tab-3 {
+    top: -50px;
+    left: -20px;
+}
+
 .solution__img {
     margin-left: 18px;
+}
+
+.solution__img--tab-3 {
+    z-index: 3;
+    position: relative;
 }
 
 .solution__stats-item {
@@ -686,6 +700,18 @@ h6 {
     font-size: 16px;
     font-weight: 400;
     white-space: nowrap;
+}
+
+.solution__stats-text {
+    font-size: 14;
+    color: rgba(84, 99, 106, 1);
+    white-space: nowrap;
+}
+
+.solution__stats-text.solution__stats-text--tab-4 {
+    padding-left: 20px;
+    white-space: initial;
+    line-height: 32px;
 }
 
 .solution__stats-count--blue {
@@ -1406,6 +1432,10 @@ input#pedsumid::-ms-tooltip {
 }
 
 .tabs-nav__item {
+    cursor: pointer;
+}
+
+.tabs-nav__item--benefits {
     border-bottom: 1px solid rgba(196, 196, 196, 1);
     cursor: pointer;
     flex: 1;
@@ -1417,7 +1447,7 @@ input#pedsumid::-ms-tooltip {
     padding: 10px 20px;
 }
 
-.tabs-nav__item.is-active {
+.tabs-nav__item--benefits.is-active {
     border-color: rgba(255, 0, 0, 1);
     border-width: 3px;
     color: rgba(255, 0, 0, 1);

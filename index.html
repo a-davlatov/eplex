@@ -175,8 +175,9 @@
                 <div class="section__subtitle">при обороте компани 2 млн. рублей</div>
                 <div class="benefits__inner section__inner section__inner--benefits">
                     <div class="tabs__nav tabs__nav--benefits tabs-nav">
-                        <div class="tabs-nav__item is-active" data-tab-name="tab-1">До Eplex</div>
-                        <div class="tabs-nav__item" data-tab-name="tab-2">После Eplex</div>
+                        <div class="tabs-nav__item tabs-nav__item--benefits is-active" data-tab-name="tab-1">До Eplex
+                        </div>
+                        <div class="tabs-nav__item tabs-nav__item--benefits" data-tab-name="tab-2">После Eplex</div>
                     </div>
                     <div class="benefits__item tab tab-1 is-active">
                         <div class="section__title section__title--benefits section__title--sm">До Eplex</div>
@@ -279,7 +280,7 @@
                 <h2 class="section__title section__title--center">Решения для автоматизации магазинов автозапчастей</h2>
 
                 <div class="solution__nav">
-                    <a href="#" class="solution__nav-link">
+                    <div class="solution__nav-link tabs-nav__item is-active" data-tab-name="solution-tab-1">
                         <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0.5 20.5H29.5V22C29.5 22.8284 28.8284 23.5 28 23.5H2C1.17157 23.5 0.5 22.8284 0.5 22V20.5Z"
@@ -292,8 +293,8 @@
                             <rect x="13.5" y="9.5" width="3" height="7" stroke="#FF0000" />
                         </svg>
                         Контроль закупок
-                    </a>
-                    <a href="#" class="solution__nav-link">
+                    </div>
+                    <div class="solution__nav-link tabs-nav__item" data-tab-name="solution-tab-2">
                         <svg width="32" height="32" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M26 17L28.5 15L31 17" stroke="#FF0000" />
                             <path d="M10 12.5L7.5 14.5L5 12.5" stroke="#FF0000" />
@@ -312,8 +313,8 @@
                             <rect y="26" width="2" height="2" fill="#FF0000" />
                         </svg>
                         Продажи без рутины
-                    </a>
-                    <a href="#" class="solution__nav-link">
+                    </div>
+                    <div class="solution__nav-link tabs-nav__item" data-tab-name="solution-tab-3">
                         <svg width="30" height="28" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0.5 8.97231V4.5H8.5V10V10.5H9H19H23.5H29.191L27.685 13.512C27.2975 14.2869 26.7591 14.9765 26.1013 15.5403L25.6407 15.9352C24.4626 16.945 22.9622 17.5 21.4105 17.5H1.44752L0.5 8.97231Z"
@@ -328,8 +329,8 @@
                             <rect x="20.5" y="2.5" width="4" height="4" stroke="#FF0000" />
                         </svg>
                         Закупки в один клик
-                    </a>
-                    <a href="#" class="solution__nav-link">
+                    </div>
+                    <div class="solution__nav-link tabs-nav__item" data-tab-name="solution-tab-4">
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.5 29.5V9.2831L15 0.583095L29.5 9.2831V29.5H0.5Z" stroke="#FF0000" />
                             <rect x="3.5" y="11.5" width="23" height="18" stroke="#FF0000" />
@@ -338,9 +339,9 @@
                             <rect x="11.5" y="15.5" width="7" height="7" stroke="#FF0000" />
                         </svg>
                         Оптимизация склада
-                    </a>
+                    </div>
                 </div><!-- /.solution__nav -->
-                <div class="solution__inner">
+                <div class="solution__inner is-active tab solution-tab-1">
                     <div class="solution__item">
                         <div class="solution__stats">
                             <div class="solution__stats-item">
@@ -414,6 +415,133 @@
                         <a href="#" class="btn btn--red">ПОДРОБНЕЕ О РЕШЕНИИ</a>
                     </div>
                 </div><!-- /.solution__inner -->
+
+                <div class="solution__inner tab solution-tab-2">
+                    <div class="solution__item">
+                        <div class="solution__stats">
+                            <div class="solution__stats-item">
+                                <div class="solution__stats-icon">
+                                    <svg width="10" height="13" viewBox="0 0 10 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 12.5V8.30902L5 6.55902L8.5 8.30902V12.5H1.5Z" stroke="#FF0000" />
+                                        <path d="M8.5 0.5L8.5 4.69098L5 6.44098L1.5 4.69098L1.5 0.500001L8.5 0.5Z"
+                                            stroke="#FF0000" />
+                                        <path d="M0 12.5H10" stroke="#FF0000" />
+                                        <path d="M10 0.5L0 0.500001" stroke="#FF0000" />
+                                    </svg>
+                                </div>
+                                <div class="solution__stats-text">В работе</div>
+                            </div>
+                            <div class="solution__stats-item">
+                                <div class="solution__stats-icon">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L11 11M11 1L1 11" stroke="#FF0000" />
+                                    </svg>
+                                </div>
+                                <div class="solution__stats-text">Отказано</div>
+                            </div>
+                            <div class="solution__stats-item">
+                                <div class="solution__stats-icon">
+                                    <svg width="17" height="11" viewBox="0 0 17 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="11" height="9" stroke="#FF0000" />
+                                        <path d="M11.5 2.5H14.7324L16.5 5.15139V9.5H11.5V2.5Z" stroke="#FF0000" />
+                                        <circle cx="3.5" cy="9.5" r="1" fill="white" stroke="#FF0000" />
+                                        <circle cx="13.5" cy="9.5" r="1" fill="white" stroke="#FF0000" />
+                                    </svg>
+                                </div>
+                                <div class="solution__stats-text">В пути</div>
+                            </div>
+                            <div class="solution__stats-item">
+                                <div class="solution__stats-icon">
+                                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.5 6L5.79059 10.9239L15.924 0.790467" stroke="#FF0000" />
+                                        <path
+                                            d="M2.41612 6C3.18768 4.2341 4.94976 3 7.00008 3C8.4505 3 9.75667 3.61758 10.67 4.60412M11.811 6.63315C11.9341 7.06759 12.0001 7.5261 12.0001 8C12.0001 10.7614 9.7615 13 7.00008 13C4.58112 13 2.56337 11.2822 2.1001 9"
+                                            stroke="#FF0000" />
+                                    </svg>
+                                </div>
+                                <div class="solution__stats-text">Готово к отгрузке</div>
+                            </div>
+                        </div>
+                        <img class="solution__img img" src="assets/images/solution/image2.jpg" alt="Статистика">
+                        <div class="solution__arrow">
+                            <svg width="23" height="321" viewBox="0 0 23 321" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5 0V150L2 160L22.5 170V321" stroke="#AEAEAE" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="solution__item">
+                        <div class="solution__text">Разнообразный и богатый опыт постоянное
+                            информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и
+                            реализации системы обучения кадров, соответствует насущным потребностям.</div>
+                        <a href="#" class="btn btn--red">ПОДРОБНЕЕ О РЕШЕНИИ</a>
+                    </div>
+                </div><!-- /.solution__inner 2 -->
+
+                <div class="solution__inner tab solution-tab-3">
+                    <div class="solution__item">
+                        <div class="solution__stats solution__stats--tab-3">
+                            <img class="img" src="assets/images/solution/image2.jpg" alt="Статистика">
+                        </div>
+                        <img class="solution__img solution__img--tab-3 img" src="assets/images/solution/image3.jpg"
+                            alt="Статистика">
+                        <div class="solution__arrow">
+                            <svg width="23" height="321" viewBox="0 0 23 321" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5 0V150L2 160L22.5 170V321" stroke="#AEAEAE" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="solution__item">
+                        <div class="solution__text">Разнообразный и богатый опыт постоянное
+                            информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и
+                            реализации системы обучения кадров, соответствует насущным потребностям.</div>
+                        <a href="#" class="btn btn--red">ПОДРОБНЕЕ О РЕШЕНИИ</a>
+                    </div>
+                </div><!-- /.solution__inner 3 -->
+
+                <div class="solution__inner tab solution-tab-4">
+                    <div class="solution__item">
+                        <div class="solution__stats">
+                            <div class="solution__stats-item">
+                                <div class="solution__stats-icon">
+                                    <svg width="29" height="35" viewBox="0 0 29 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="17.5" width="28" height="2" stroke="#FF0000" />
+                                        <rect x="0.5" y="0.5" width="28" height="2" stroke="#FF0000" />
+                                        <rect x="1.5" y="19.5" width="2" height="15" stroke="#FF0000" />
+                                        <rect x="1.5" y="2.5" width="2" height="15" stroke="#FF0000" />
+                                        <rect x="25.5" y="19.5" width="2" height="15" stroke="#FF0000" />
+                                        <rect x="25.5" y="2.5" width="2" height="15" stroke="#FF0000" />
+                                        <rect x="6.5" y="23.5" width="8" height="11" stroke="#FF0000" />
+                                        <rect x="14.5" y="26.5" width="8" height="8" stroke="#FF0000" />
+                                        <rect x="17.5" y="5.5" width="5" height="12" stroke="#FF0000" />
+                                        <rect x="12.5" y="5.5" width="5" height="12" stroke="#FF0000" />
+                                        <rect x="6.5" y="9.5" width="6" height="8" stroke="#FF0000" />
+                                    </svg>
+                                </div>
+                                <div class="solution__stats-text solution__stats-text--tab-4">Автоматизированное <br> рабочее место кладовщика</div>
+                            </div>
+                        </div>
+                        <img class="solution__img img" src="assets/images/solution/image4.jpg" alt="Статистика">
+                        <div class="solution__arrow">
+                            <svg width="23" height="321" viewBox="0 0 23 321" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5 0V150L2 160L22.5 170V321" stroke="#AEAEAE" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="solution__item">
+                        <div class="solution__text">Разнообразный и богатый опыт постоянное
+                            информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и
+                            реализации системы обучения кадров, соответствует насущным потребностям.</div>
+                        <a href="#" class="btn btn--red">ПОДРОБНЕЕ О РЕШЕНИИ</a>
+                    </div>
+                </div><!-- /.solution__inner 4 -->
             </div><!-- /.container -->
         </section><!-- /.solution -->
 
