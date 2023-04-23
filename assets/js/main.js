@@ -48,3 +48,18 @@ burger.addEventListener('click', (evt) => {
     evt.target.classList.toggle('clicked')
     headerWrapper.classList.toggle('show')
 })
+
+// Make some content slider on mobile devices
+function makeSlider() {
+    if (window.innerWidth < 767) {
+        document.querySelectorAll('.show-on-mobile').forEach((el) => {
+            ItcSlider.getOrCreateInstance(el, {
+                loop: true,
+                autoplay: true
+            })
+        })
+    }
+}
+
+window.addEventListener('load', makeSlider)
+window.addEventListener('resize', makeSlider)

@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.itc-slider-2 .itc-slider__wrapper {
+  overflow: visible;
+}
+
 .itc-slider__wrapper {
   overflow: hidden;
 }
