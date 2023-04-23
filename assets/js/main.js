@@ -52,7 +52,7 @@ burger.addEventListener('click', (evt) => {
 // Make some content slider on mobile devices
 function makeSlider() {
     if (window.innerWidth < 767) {
-        document.querySelectorAll('.show-on-mobile').forEach((el) => {
+        document.querySelectorAll('.run-on-mobile').forEach((el) => {
             ItcSlider.getOrCreateInstance(el, {
                 loop: true,
                 autoplay: true

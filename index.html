@@ -342,7 +342,7 @@
                     </div>
                 </div><!-- /.solution__nav -->
 
-                <div class="itc-slider itc-slider-2 show-on-mobile">
+                <div class="itc-slider itc-slider-2 run-on-mobile">
                     <div class="itc-slider__wrapper">
                         <div class="itc-slider__items">
                             <div class="solution__inner itc-slider__item is-active tab solution-tab-1">
@@ -391,7 +391,8 @@
                                             </div>
                                             <div class="solution__stats-title">Средняя цена</div>
                                             <div class="solution__stats-count solution__stats-count--green">648
-                                                <span>₽</span></div>
+                                                <span>₽</span>
+                                            </div>
                                         </div>
                                         <div class="solution__stats-item">
                                             <div class="solution__stats-icon">
@@ -563,7 +564,14 @@
                             </div><!-- /.solution__inner 4 -->
                         </div>
                     </div>
-                </div>
+
+                    <ol class="itc-slider__indicators itc-slider__indicators--solution">
+                        <li class="itc-slider__indicator" data-slide-to="0"></li>
+                        <li class="itc-slider__indicator" data-slide-to="1"></li>
+                        <li class="itc-slider__indicator" data-slide-to="2"></li>
+                        <li class="itc-slider__indicator" data-slide-to="3"></li>
+                    </ol>
+                </div><!-- /.itc-slider -->
             </div><!-- /.container -->
         </section><!-- /.solution -->
 
@@ -626,30 +634,40 @@
             <div class="container">
                 <div class="materials__title">
                     <h2 class="section__title">Полезные материалы</h2>
-                    <a href="#" class="materials__link">Все материалы</a>
+                    <a href="#" class="materials__link materials__link--title">Все материалы</a>
                 </div>
-                <div class="materials__inner">
-                    <div class="materials__item">
-                        <img class="img materials__img" src="assets/images/materials/img1.jpg" alt="">
-                        <div class="materials__content">
-                            <div class="materials__text">Повседневная практика показывает</div>
-                            <a href="#" class="materials__link materials__link--inside">Подробнее</a>
+                <div class="itc-slider run-on-mobile">
+                    <div class="itc-slider__wrapper">
+                        <div class="materials__inner itc-slider__items">
+                            <div class="materials__item itc-slider__item">
+                                <img class="img materials__img" src="assets/images/materials/img1.jpg" alt="">
+                                <div class="materials__content">
+                                    <div class="materials__text">Повседневная практика показывает</div>
+                                    <a href="#" class="materials__link materials__link--inside">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="materials__item itc-slider__item">
+                                <div class="materials__content">
+                                    <div class="materials__text">Задача организации, <br>в особенности</div>
+                                    <a href="#" class="materials__link materials__link--inside">Подробнее</a>
+                                </div>
+                                <img class="img materials__img" src="assets/images/materials/img2.jpg" alt="">
+                            </div>
+                            <div class="materials__item itc-slider__item">
+                                <img class="img materials__img" src="assets/images/materials/img3.jpg" alt="">
+                                <div class="materials__content">
+                                    <div class="materials__text">Повседневная практика показывает</div>
+                                    <a href="#" class="materials__link materials__link--inside">Подробнее</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="materials__item">
-                        <div class="materials__content">
-                            <div class="materials__text">Задача организации, <br>в особенности</div>
-                            <a href="#" class="materials__link materials__link--inside">Подробнее</a>
-                        </div>
-                        <img class="img materials__img" src="assets/images/materials/img2.jpg" alt="">
-                    </div>
-                    <div class="materials__item">
-                        <img class="img materials__img" src="assets/images/materials/img3.jpg" alt="">
-                        <div class="materials__content">
-                            <div class="materials__text">Повседневная практика показывает</div>
-                            <a href="#" class="materials__link materials__link--inside">Подробнее</a>
-                        </div>
-                    </div>
+                    <ol class="itc-slider__indicators itc-slider__indicators--materials">
+                        <li class="itc-slider__indicator" data-slide-to="0"></li>
+                        <li class="itc-slider__indicator" data-slide-to="1"></li>
+                        <li class="itc-slider__indicator" data-slide-to="2"></li>
+                        <li class="itc-slider__indicator" data-slide-to="3"></li>
+                    </ol>
                 </div>
             </div>
         </section>

@@ -620,6 +620,7 @@ h6 {
     display: flex;
     justify-content: space-between;
 }
+
 .solution__inner.tab.is-active {
     display: flex;
 }
@@ -842,7 +843,8 @@ h6 {
 }
 
 .materials__item {
-    width: 33.3333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
 }
 
 .materials__content {
@@ -1883,6 +1885,10 @@ input#pedsumid::-ms-tooltip {
         margin-left: 0;
     }
 
+    .solution__item:last-child {
+        margin-bottom: 40px;
+    }
+
     /* Solutions */
     .solutions__item+.solutions__item {
         margin-left: 15px;
@@ -1906,7 +1912,15 @@ input#pedsumid::-ms-tooltip {
 
     .itc-slider-2 .itc-slider__wrapper {
         overflow: hidden;
-      }
+    }
+
+    .itc-slider__indicators {
+        display: flex;
+    }
+
+    .itc-slider__indicators--materials {
+        bottom: -30px;
+    }
 
     /* Consultation */
     .consultation__inner {
@@ -1917,15 +1931,23 @@ input#pedsumid::-ms-tooltip {
         width: 100%;
     }
 
+    .consultation__item:nth-child(1) {
+        order: 2;
+    }
+
+    .consultation__item:nth-child(2) {
+        order: 1;
+    }
+
     /* Materials */
 
     .materials__inner {
         margin-top: 35px;
-        flex-direction: column;
     }
 
     .materials__item {
-        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -1941,6 +1963,10 @@ input#pedsumid::-ms-tooltip {
     .materials__content {
         order: 2;
         padding-bottom: 45px;
+    }
+
+    .materials__link--title {
+        display: none;
     }
 
     /* Section */
@@ -1998,6 +2024,10 @@ input#pedsumid::-ms-tooltip {
     .itc-slider-1 .itc-slider__item {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .itc-slider__btn_group {
+        top: -160px;
     }
 
     /* Intro */
@@ -2067,6 +2097,7 @@ input#pedsumid::-ms-tooltip {
     .benefits__item+.benefits__item {
         margin-top: 20px;
     }
+
     .benefits__item {
         flex-direction: column;
     }
@@ -2081,13 +2112,6 @@ input#pedsumid::-ms-tooltip {
     }
 
     /* Consultation */
-    .consultation__item:nth-child(1) {
-        order: 2;
-    }
-
-    .consultation__item:nth-child(2) {
-        order: 1;
-    }
 
     .consultation__content {
         padding: 25px 15px;
@@ -2099,7 +2123,7 @@ input#pedsumid::-ms-tooltip {
 
     /* Btn */
     .btn--red {
-        padding: 10px 11px;
+        padding: 10px;
     }
 
     /* Contacts */
@@ -2234,6 +2258,7 @@ input#pedsumid::-ms-tooltip {
 
     .materials__text {
         font-size: 18px;
+        line-height: 25px;
     }
 
     .materials__link {
