@@ -146,4 +146,4 @@ class Accordion {
     }
 }
 
-new Accordion('#accordion-1')
+(document.querySelector('#accordion-1') != undefined) ? new Accordion('#accordion-1') : null
