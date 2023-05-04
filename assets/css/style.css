@@ -1740,6 +1740,16 @@ input#pedsumid::-ms-tooltip {
     padding-left: 30px;
 }
 
+/* Delivery
+=============== */
+
+.delivery__inner {
+    margin-top: 30px;
+    padding: 0 20px 20px;
+    border: 4px solid rgba(61, 61, 61, .1);
+    border-radius: 10px;
+}
+
 /* Media
 =============== */
 
