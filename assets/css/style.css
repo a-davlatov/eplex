@@ -976,6 +976,20 @@ h6 {
     height: 40px;
     background: rgba(244, 244, 244, 1);
     border-radius: 3px;
+    transition: all .2s linear;
+}
+
+.social__link:hover {
+    transform: translateY(-7px);
+    background: red;
+}
+
+.social__link path {
+    transition: fill .2s linear;
+}
+
+.social__link:hover path {
+    fill: #fff;
 }
 
 .social__link+.social__link {
