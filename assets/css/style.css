@@ -69,6 +69,18 @@ h6 {
     left: 0;
     z-index: 999;
     width: 100%;
+    transform-origin: top center;
+    transition: transform .6s cubic-bezier(.25, .46, .45, .94), background-color .5s cubic-bezier(.25, .46, .45, .94);
+}
+
+.header.hide {
+    transform: translateY(-145px);
+}
+
+.header.fixed {
+    position: fixed;
+    background: #fff;
+    color: #333;
 }
 
 .header--main {

@@ -1,7 +1,30 @@
 'use strict'
 
+let lastScroll = 0;
+const header = document.querySelector('.header');
 const headerWrapper = document.querySelector('.header__wrapper')
 const burger = document.querySelector('.burger')
+// const defaultOffset = document.querySelector('.main').children[0].clientHeight
+
+const scrollPosition = () => window.pageXOffset || document.documentElement.scrollTop;
+const containHide = () => header.classList.contains('hide');
+
+// Fixed header
+window.addEventListener('scroll', () => {
+
+    if (scrollPosition() > lastScroll && !containHide() && scrollPosition() > 200) {
+        //scroll down
+        header.classList.add('hide')
+    } else if (scrollPosition() < lastScroll && containHide()) {
+        //scroll up
+        header.classList.remove('hide')
+        header.classList.add('fixed')
+    } else if (scrollPosition() < 200) {
+        header.classList.remove('fixed')
+    }
+
+    lastScroll = scrollPosition()
+})
 
 // Before/After images effect
 function beforeAfter() {
@@ -37,7 +60,7 @@ function tab() {
 
 tab()
 
-// Burger menu
+// Nav toggle
 burger.addEventListener('click', (evt) => {
     const logo = document.querySelector('#logo-main')
     if (logo) {
