@@ -50,18 +50,25 @@ burger.addEventListener('click', (evt) => {
 })
 
 // Make some content slider on mobile devices
+const sliders = []
 function makeSlider() {
-    const sliders = document.querySelectorAll('.run-on-mobile')
-
+    
     if (window.innerWidth < 767) {
-        sliders.forEach((el) => {
-            ItcSlider.getOrCreateInstance(el, {
-                loop: true,
-                autoplay: true
+        if (sliders.length === 0) {
+            document.querySelectorAll('.run-on-mobile').forEach((el) => {
+                const slider = ItcSlider.getOrCreateInstance(el, {
+                    loop: true,
+                    autoplay: true
+                })
+                sliders.push(slider)
             })
-        })
+        }
         return
     }
+    
+    sliders.forEach((el) => {
+        el.dispose()
+    })
 }
 
 window.addEventListener('load', makeSlider)
