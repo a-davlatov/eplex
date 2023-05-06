@@ -4,7 +4,7 @@ let lastScroll = 0;
 const header = document.querySelector('.header');
 const headerWrapper = document.querySelector('.header__wrapper')
 const burger = document.querySelector('.burger')
-// const defaultOffset = document.querySelector('.main').children[0].clientHeight
+const defaultOffset = header.clientHeight
 
 const scrollPosition = () => window.pageXOffset || document.documentElement.scrollTop;
 const containHide = () => header.classList.contains('hide');
@@ -12,14 +12,14 @@ const containHide = () => header.classList.contains('hide');
 // Fixed header
 window.addEventListener('scroll', () => {
 
-    if (scrollPosition() > lastScroll && !containHide() && scrollPosition() > 200) {
+    if (scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
         //scroll down
         header.classList.add('hide')
     } else if (scrollPosition() < lastScroll && containHide()) {
         //scroll up
         header.classList.remove('hide')
         header.classList.add('fixed')
-    } else if (scrollPosition() < 200) {
+    } else if (scrollPosition() < defaultOffset) {
         header.classList.remove('fixed')
     }
 
@@ -37,37 +37,25 @@ function tab() {
         tabContent = document.querySelectorAll('.tab'),
         tabName
 
-    tabNav.forEach(item => {
-        item.addEventListener('click', selectTabNav)
-    })
+    tabNav.forEach(item => item.addEventListener('click', selectTabNav))
 
     function selectTabNav() {
-        tabNav.forEach(item => {
-            item.classList.remove('is-active')
-        })
+        tabNav.forEach(item => item.classList.remove('is-active'))
         this.classList.add('is-active')
         tabName = this.getAttribute('data-tab-name')
         selectTabContent(tabName)
     }
 
     function selectTabContent(tabName) {
-        tabContent.forEach(item => {
-            item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active')
-        })
+        tabContent.forEach(item => item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active'))
     }
-
 }
 
 tab()
 
 // Nav toggle
 burger.addEventListener('click', (evt) => {
-    const logo = document.querySelector('#logo-main')
-    if (logo) {
-        let changeLogoSrc = logo.src.indexOf('light')
-        changeLogoSrc != -1 ? logo.setAttribute('src', 'assets/images/logo-dark.png') : logo.setAttribute('src', 'assets/images/logo-light.png')
-    }
-
+    document.body.classList.toggle('no-scroll')
     evt.target.classList.toggle('clicked')
     headerWrapper.classList.toggle('show')
 })
