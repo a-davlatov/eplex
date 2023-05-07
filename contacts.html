@@ -81,7 +81,7 @@
                                 </svg>
                                 8 800 400-50-50
                             </a>
-                            <button type="button" class="btn btn--grey">Перезвоните мне</button>
+                            <button type="button" data-modal="modal_response" class="btn btn--grey">Перезвоните мне</button>
                         </div>
                     </div>
                     <div class="header__bottom">
@@ -252,6 +252,31 @@
             </div>
         </div>
     </footer>
+    
+    <div class="modal" id="modal_response">
+        <div class="modal__dialog modal__dialog--response">
+            <button class="modal__close">
+                <img src="assets/images/close.webp" width="24" height="24" alt="Закрыть">
+            </button>
+            <h1 class="modal__title">Свяжитесь с нами</h1>
+            <div class="modal__subtitle">Оставьте заявку и наш менеджер в ближайшее время<br> свяжется с вами.</div>
+
+            <form action="/" method="POST" class="form">
+                <div class="form__inner">
+                    <div class="form__control">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form__control">
+                        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                    </div>
+                    <div class="form__control">
+                        <textarea type="tel" name="message" placeholder="Сообщение"></textarea>
+                    </div>
+                </div>
+                <button class="btn btn--red btn--sm" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 
     <script src="assets/js/itc-slider.min.js"></script>
     <script src="assets/js/main.js"></script>
