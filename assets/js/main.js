@@ -26,6 +26,41 @@ window.addEventListener('scroll', () => {
     lastScroll = scrollPosition()
 })
 
+// Show modal
+const modalEls = document.querySelectorAll('.modal');
+const modalCloseEls = document.querySelectorAll('.modal__close');
+const modalLinks = document.querySelectorAll('[data-modal]');
+modalLinks.forEach((el) => {
+    el.addEventListener('click', (evt) => {
+        evt.preventDefault();
+
+        const elementId = el.dataset.modal;
+        const modalEl = document.getElementById(elementId);
+        modalEl.classList.add('show');
+        document.body.classList.add('no-scroll');
+    })
+});
+
+modalCloseEls.forEach((el) => {
+    el.addEventListener('click', (evt) => {
+        el.closest('.modal').classList.remove('show');
+        document.body.classList.remove('no-scroll');
+    });
+});
+
+modalEls.forEach((el) => {
+    el.addEventListener('click', (evt) => {
+        el.classList.remove('show');
+        document.body.classList.remove('no-scroll');
+    });
+});
+
+document.querySelectorAll('.modal__dialog').forEach((el) => {
+    el.addEventListener('click', (evt) => {
+        evt.stopPropagation();
+    });
+});
+
 // Before/After images effect
 function beforeAfter() {
     document.getElementById('kobavenusab').style.width = document.getElementById('pedsumid').value + "%"
