@@ -383,7 +383,7 @@ h6 {
 
 .intro {
     width: 100%;
-    /* background: url('../images/intro/bg.png');
+    /* background: url('../images/intro/bg.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; */
@@ -1498,7 +1498,7 @@ h6 {
 }
 
 .slayden-savnena figure {
-    background-image: url('../images/benefits/macboook.png');
+    background-image: url('../images/benefits/macboook.webp');
     background-size: cover;
     background-position: center center;
     font-size: 0;
@@ -1509,7 +1509,7 @@ h6 {
 }
 
 #kobavenusab {
-    background-image: url('../images/benefits/chut.jpg');
+    background-image: url('../images/benefits/chut.webp');
     background-size: cover;
     bottom: 0;
     border-right: 5px solid rgba(243, 240, 240, 0.7);
@@ -1586,7 +1586,7 @@ input#pedsumid::-ms-tooltip {
 }
 
 #kobavenusab::before {
-    background: url(http://zornet.ru/ABVUN/Aba/detunis/comparision.png) no-repeat scroll 0 center transparent;
+    background: url('http://zornet.ru/ABVUN/Aba/detunis/comparision.png') no-repeat scroll 0 center transparent;
     background-size: contain;
     content: " ";
     float: right;
