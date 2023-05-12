@@ -2042,7 +2042,7 @@ input#pedsumid::-ms-tooltip {
 
     /* Intro */
     .intro--services {
-        margin-top: 85px;
+        margin-top: 60px;
     }
 
     .intro__title {
@@ -2491,10 +2491,6 @@ input#pedsumid::-ms-tooltip {
     }
 
     /* Intro */
-
-    .intro--services {
-        margin-top: 70px;
-    }
 
     .intro.intro--services img {
         height: 590px;
