@@ -96,29 +96,29 @@ burger.addEventListener('click', (evt) => {
 })
 
 // Make some content slider on mobile devices
-const sliders = []
-function makeSlider() {
-    
-    if (window.innerWidth < 767) {
-        if (sliders.length === 0) {
-            document.querySelectorAll('.run-on-mobile').forEach((el) => {
-                const slider = ItcSlider.getOrCreateInstance(el, {
-                    loop: true,
-                    autoplay: true
-                })
-                sliders.push(slider)
-            })
-        }
-        return
+document.addEventListener('DOMContentLoaded', () => {
+  new ResizeObserver(() => {
+    if (window.matchMedia('screen and (max-width: 767px)').matches) {
+      document.querySelectorAll('.run-on-mobile').forEach((el) => {
+        el.querySelectorAll('.itc-slider-btn').forEach((el) => {
+          el.style.removeProperty('display');
+        });
+        ItcSlider.getOrCreateInstance(el, {
+          loop: true,
+          autoplay: true
+        });
+      });
+    } else {
+      document.querySelectorAll('.run-on-mobile').forEach((el) => {
+        const slider = ItcSlider.getOrCreateInstance(el);
+        slider.dispose();
+        el.querySelectorAll('.itc-slider-btn').forEach((el) => {
+          el.style.display = 'none';
+        });
+      });
     }
-    
-    sliders.forEach((el) => {
-        el.dispose()
-    })
-}
-
-window.addEventListener('load', makeSlider)
-window.addEventListener('resize', makeSlider)
+  }).observe(document.body);
+});
 
 // Accordion
 class Accordion {
